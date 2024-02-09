@@ -32,8 +32,12 @@ const nextAuthOptions: NextAuthOptions = {
       },
     }),
   ],
+  secret: 'abcabcde',
   pages: {
-    signIn: '/logar',
+    signIn: '/login',
+  },
+  session: {
+    maxAge: 60 * 1, // 1 minuto
   },
 }
 

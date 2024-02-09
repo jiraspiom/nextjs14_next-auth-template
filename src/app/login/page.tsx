@@ -4,7 +4,7 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { SyntheticEvent, useState } from 'react'
 
-export default function Logar() {
+export default function Login() {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
 
@@ -24,7 +24,7 @@ export default function Logar() {
     }
 
     // replace apaga todo historio de navegacao e vai direto para o /admin
-    router.replace('/admin')
+    router.replace('/')
   }
 
   return (
